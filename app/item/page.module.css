@@ -1,0 +1,58 @@
+/* app/info/page.module.css */
+.container {
+  width: 100%;
+  height: 100vh;
+  padding-top: 4rem; /* 네비게이션 바 높이만큼 여백 */
+}
+
+.textContainer {
+  width: 100%;
+  height: calc(100vh - 4rem);
+  overflow-y: auto;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  padding: 1rem 2rem; /* 상단 패딩 감소 */
+  text-align: center; /* 텍스트 중앙 정렬 */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.textContainer::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.content {
+  font-size: 1.5rem;
+}
+
+/* PC 버전 (1024px 이상) */
+@media screen and (min-width: 1024px) {
+  .title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+  }
+
+  .content {
+    font-size: 1.5rem;
+  }
+}
+
+/* 모바일 버전 (768px 이하) */
+@media screen and (max-width: 768px) {
+  .title {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .content {
+    font-size: 1rem;
+  }
+}
