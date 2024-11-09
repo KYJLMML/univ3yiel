@@ -127,6 +127,6 @@
     width: 100% !important;
     height: auto !important;
     max-height: 100%;
-    object-fit: contain !important;
+    object-fit: cover !important;
   }
 }
