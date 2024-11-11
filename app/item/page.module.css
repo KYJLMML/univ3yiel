@@ -90,21 +90,41 @@
 @media screen and (max-width: 768px) {
   .container {
     padding-top: 3rem;
+    width: 95%; /* info/page.module.css 참고 */
   }
   
   .textContainer {
     height: calc(90vh - 3rem);
   }
 
+  .scrollContainer {
+    height: calc(90vh - 3rem);
+    width: 95%; /* info/page.module.css 참고 */
+    overflow-y: auto;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .scrollContainer::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+  }
+
   .title {
     font-size: 1.5rem; /* 모바일에서 제목 크기 조정 */
+    text-align: left; /* 텍스트 왼쪽 정렬 */
   }
 
   .content {
     font-size: 1rem; /* 모바일에서 내용 크기 조정 */
+    text-align: left; /* 텍스트 왼쪽 정렬 */
   }
 
   .caption {
     font-size: 1rem; /* 모바일에서 캡션 크기 조정 */
+    text-align: left; /* 텍스트 왼쪽 정렬 */
   }
 }
