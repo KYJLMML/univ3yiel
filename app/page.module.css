@@ -212,8 +212,8 @@
   }
 
   .imageContainer {
-    top: 3rem;
-    height: calc(100vh - 3rem);
+    top: 3.5rem;
+    height: calc(100vh - 3.5rem);
     display: flex;
     justify-content: center;
     align-items: center;

@@ -23,6 +23,13 @@
   padding: 0.3rem 0;
 }
 
+/* 모바일 환경에서 YIEL 숨기기 */
+@media screen and (max-width: 768px) {
+  .logo {
+    display: none;
+  }
+}
+
 .nav {
   position: absolute;
   width: 100%;
