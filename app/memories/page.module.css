@@ -4,6 +4,10 @@
   padding-top: 4rem; /* 네비게이션 바 높이만큼 여백 */
   overflow-x: hidden; /* 가로 스크롤 방지 */
   overflow-y: hidden; /* 세로 스크롤 비활성화 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center; /* 글씨 중앙 정렬 */
 }
 
 .scrollContainer {
@@ -32,6 +36,9 @@
   width: 100%;
   max-width: 800px;
   margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .video {
@@ -41,7 +48,7 @@
 
 .caption {
   font-size: 1.2rem;
-  text-align: center;
+  text-align: center; /* 텍스트 중앙 정렬 */
   margin-top: 0.5rem;
 }
 
