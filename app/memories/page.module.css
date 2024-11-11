@@ -2,6 +2,7 @@
   width: 100%;
   height: 100vh;
   padding-top: 4rem; /* 네비게이션 바 높이만큼 여백 */
+  overflow-x: hidden; /* 가로 스크롤 방지 */
 }
 
 .scrollContainer {
@@ -44,11 +45,24 @@
 }
 
 .caption a {
-  color: black;
+  color: blue;
   text-decoration: underline;
 }
 
-/* 모바일 환경 */
+/* PC 버전 (1024px 이상) */
+@media screen and (min-width: 1024px) {
+  .title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+  }
+
+  .content {
+    font-size: 1.5rem;
+  }
+}
+
+/* 모바일 버전 (768px 이하) */
 @media screen and (max-width: 768px) {
   .container {
     padding-top: 3rem;
@@ -56,5 +70,17 @@
   
   .scrollContainer {
     height: calc(100vh - 3rem);
+  }
+
+  .title {
+    font-size: 1.5rem; /* 모바일에서 제목 크기 조정 */
+  }
+
+  .content {
+    font-size: 1rem; /* 모바일에서 내용 크기 조정 */
+  }
+
+  .caption {
+    font-size: 1rem; /* 모바일에서 캡션 크기 조정 */
   }
 }
