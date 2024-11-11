@@ -11,20 +11,21 @@ export default function Home() {
   const { setShowLayout } = useLayout();
 
   const startFadeOut = useCallback(() => {
-    if (document.querySelector(`.${styles.header}`)) { // null 체크 추가
+    const element = document.querySelector(`.${styles.header}`);
+    if (element) {  // null 체크 추가
       setIsAnimating(true);
       setTimeout(() => {
         setIsVisible(false);
         setShowLayout(true);
       }, 800);
     }
-  }, [setIsVisible, setIsAnimating, setShowLayout]);
+  }, [setShowLayout]);
 
   useEffect(() => {
     const timer = setTimeout(startFadeOut, 3000);
     return () => {
       clearTimeout(timer);
-      setIsAnimating(false); // 클린업 시 상태 초기화
+      setIsAnimating(false); // cleanup에서 상태 초기화
     };
   }, [startFadeOut]);
 
@@ -45,7 +46,7 @@ export default function Home() {
           src={isMobile ? "/p2.jpg" : "/p1.png"}
           alt="Main Image"
           fill
-          style={{ objectFit: isMobile ? 'contain' : 'cover' }}
+          style={{ objectFit: 'contain' }}
           priority
         />
       </div>
