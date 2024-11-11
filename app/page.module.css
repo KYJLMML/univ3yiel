@@ -192,11 +192,11 @@
 /* 모바일 버전 (768px 이하) */
 @media screen and (max-width: 768px) {
   .container {
-    padding-top: 3rem;
+    padding-top: 3.5rem;
   }
   
   .scrollContainer {
-    height: calc(100vh - 3rem);
+    height: calc(100vh - 3.5rem);
   }
 
   .title {
@@ -224,6 +224,6 @@
     width: 100% !important;
     height: auto !important;
     max-height: 100%;
-    object-fit: contain !important; /* 모바일에서 이미지 비율 유지 */
+    object-fit: cover !important; /* 모바일에서 이미지 비율 유지 */
   }
 }
