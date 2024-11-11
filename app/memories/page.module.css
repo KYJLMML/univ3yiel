@@ -3,6 +3,7 @@
   height: 100vh;
   padding-top: 4rem; /* 네비게이션 바 높이만큼 여백 */
   overflow-x: hidden; /* 가로 스크롤 방지 */
+  overflow-y: hidden; /* 세로 스크롤 비활성화 */
 }
 
 .scrollContainer {

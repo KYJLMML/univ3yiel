@@ -6,7 +6,7 @@
   width: 100%;
   padding: 0.5rem;
   z-index: 1000;
-  overflow-x: hidden; /* 가로 스크롤 방지 */
+  overflow: hidden; /* 가로 및 세로 스크롤 비활성화 */
 }
 
 .leftSection {
@@ -62,59 +62,6 @@
   margin-left: 20vw;
 }
 
-@media screen and (max-width: 768px) {
-  .nav {
-    display: none;
-  }
-
-  .nav.open {
-    display: flex;
-    flex-direction: column;
-    position: fixed; /* 고정 위치로 변경 */
-    top: 0; /* 상단에 고정 */
-    left: 0;
-    width: 100%;
-    height: 100vh; /* 전체 높이 */
-    background-color: white;
-    z-index: 1001; /* 메뉴가 맨 앞으로 나오도록 z-index 조정 */
-  }
-
-  .hamburger {
-    display: block;
-    font-size: 2rem;
-    cursor: pointer;
-    position: absolute;
-    right: 1rem;
-  }
-  .mobileMenu {
-    position: fixed; /* 고정 위치로 변경 */
-    top: 0; /* 상단에 고정 */
-    left: 0;
-    width: 100%;
-    height: 100vh; /* 전체 높이 */
-    background-color: black;
-    z-index: 1001; /* 메뉴가 맨 앞으로 나오도록 z-index 조정 */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; /* 중앙 정렬 */
-  }
-
-  .mobileMenu ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-  }
-
-  .mobileMenu li {
-    font-size: 1.5rem;
-    font-weight: bold;
-    padding: 1rem;
-    text-align: center;
-  }
-}
-
 /* 모바일 환경에서 YIEL 숨기기 */
 @media screen and (max-width: 768px) {
   .nav {
@@ -167,20 +114,6 @@
     font-weight: bold;
     padding: 1rem;
     text-align: center;
-  }
-}
-
-/* PC 화면에서 햄버거 버튼 숨기기 */
-@media screen and (min-width: 769px) {
-  .hamburger {
-    display: none;
-  }
-}
-
-/* PC 화면에서 더 크게 표시 */
-@media screen and (min-width: 1024px) {
-  .logo {
-    font-size: 3rem;
   }
 }
 

@@ -18,13 +18,13 @@
   cursor: pointer; /* header에서 container로 이동 */
   padding-top: 4rem; /* 네비게이션 바 높이만큼 여백 */
   overflow-x: hidden; /* 가로 스크롤 방지 */
+  overflow-y: hidden; /* 세로 스크롤 비활성화 */
 }
 
 .header {
   position: relative;
   display: inline-block;
   text-align: center;
-  /* cursor: pointer 제거 */
 }
 
 .header.fade-out {
@@ -152,6 +152,7 @@
   font-size: 3rem; /* 기본 크기 */
   font-weight: bold;
   margin-bottom: 1rem;
+  text-align: left; /* 텍스트 왼쪽 정렬 */
 }
 
 .mediaItem {
@@ -167,7 +168,7 @@
 
 .caption {
   font-size: 1.2rem;
-  text-align: center;
+  text-align: left; /* 텍스트 왼쪽 정렬 */
   margin-top: 0.5rem;
 }
 
@@ -182,33 +183,38 @@
     font-size: 3rem;
     font-weight: bold;
     margin-bottom: 2rem;
+    text-align: left; /* 텍스트 왼쪽 정렬 */
   }
 
   .content {
     font-size: 1.5rem;
+    text-align: left; /* 텍스트 왼쪽 정렬 */
   }
 }
 
 /* 모바일 버전 (768px 이하) */
 @media screen and (max-width: 768px) {
   .container {
-    padding-top: 3.5rem;
+    padding-top: 3rem;
   }
   
   .scrollContainer {
-    height: calc(100vh - 3.5rem);
+    height: calc(100vh - 3rem);
   }
 
   .title {
     font-size: 1.5rem; /* 모바일에서 제목 크기 조정 */
+    text-align: left; /* 텍스트 왼쪽 정렬 */
   }
 
   .content {
     font-size: 1rem; /* 모바일에서 내용 크기 조정 */
+    text-align: left; /* 텍스트 왼쪽 정렬 */
   }
 
   .caption {
     font-size: 1rem; /* 모바일에서 캡션 크기 조정 */
+    text-align: left; /* 텍스트 왼쪽 정렬 */
   }
 
   .imageContainer {

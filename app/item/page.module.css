@@ -4,11 +4,12 @@
   height: 100vh;
   padding-top: 4rem; /* 네비게이션 바 높이만큼 여백 */
   overflow-x: hidden; /* 가로 스크롤 방지 */
+  overflow-y: hidden; /* 세로 스크롤 비활성화 */
 }
 
 .textContainer {
   width: 100%;
-  height: calc(100vh - 4rem);
+  height: calc(100vh - 4rem); /* 네비게이션 바 높이 제외 */
   overflow-y: auto;
   scrollbar-width: none; /* Firefox */
   -ms-overflow-style: none; /* IE and Edge */
@@ -25,7 +26,7 @@
 
 .scrollContainer {
   width: 100%;
-  height: calc(100vh - 4rem); /* 네���게이션 바 높이 제외 */
+  height: calc(100vh - 4rem); /* 네비게이션 바 높이 제외 */
   overflow-y: auto;
   scrollbar-width: none; /* Firefox */
   -ms-overflow-style: none; /* IE and Edge */
@@ -40,7 +41,7 @@
 }
 
 .title {
-  font-size: 2rem; /* 기본 크기 */
+  font-size: 3rem; /* 기본 크기 */
   font-weight: bold;
   margin-bottom: 1rem;
 }
@@ -67,6 +68,11 @@
   text-decoration: underline;
 }
 
+.content {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
 /* PC 버전 (1024px 이상) */
 @media screen and (min-width: 1024px) {
   .title {
@@ -86,7 +92,7 @@
     padding-top: 3rem;
   }
   
-  .scrollContainer {
+  .textContainer {
     height: calc(100vh - 3rem);
   }
 
