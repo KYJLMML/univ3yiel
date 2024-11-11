@@ -13,7 +13,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 90vh;
   width: 100%;
   cursor: pointer; /* header에서 container로 이동 */
   padding-top: 4rem; /* 네비게이션 바 높이만큼 여백 */
