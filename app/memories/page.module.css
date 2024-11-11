@@ -1,6 +1,6 @@
 .container {
   width: 100%;
-  height: 100vh;
+  height: 90vh;
   padding-top: 4rem; /* 네비게이션 바 높이만큼 여백 */
   overflow-x: hidden; /* 가로 스크롤 방지 */
   overflow-y: hidden; /* 세로 스크롤 비활성화 */
@@ -8,7 +8,7 @@
 
 .scrollContainer {
   width: 100%;
-  height: calc(100vh - 4rem); /* 네비게이션 바 높이 제외 */
+  height: calc(90vh - 4rem); /* 네비게이션 바 높이 제외 */
   overflow-y: auto;
   scrollbar-width: none; /* Firefox */
   -ms-overflow-style: none; /* IE and Edge */
@@ -70,7 +70,7 @@
   }
   
   .scrollContainer {
-    height: calc(100vh - 3rem);
+    height: calc(90vh - 3rem);
   }
 
   .title {
